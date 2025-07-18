@@ -50,7 +50,7 @@ footer > h2 > a {
 }
 
 footer > h2 > a:hover {
-    color: #FF2B58;
+    color: #9933FF;
 }
 
 
@@ -69,7 +69,7 @@ footer > h2 > a:hover {
 }
 
 .header-title {
-    color: #FF2B58;    
+    color: #9933FF;
     text-align: center;
     line-height: 0.95;
 }
@@ -80,7 +80,7 @@ footer > h2 > a:hover {
 }
 
 .magenta {
-    color: #FF2B58;
+    color: #9933FF;
 }
 
 .content {
@@ -101,10 +101,10 @@ footer > h2 > a:hover {
 }
 
 .box-highlight {
-    background-color: #FF2B58;
-    -webkit-box-shadow:0px 0px 91px 5px rgba(255,43,89,0.64);
-    -moz-box-shadow: 0px 0px 91px 5px rgba(255,43,89,0.64);
-    box-shadow: 0px 0px 91px 5px rgba(255,43,89,0.64);
+    background-color: #9933FF;
+    -webkit-box-shadow:0px 0px 91px 5px rgba(153, 51, 255, 0.64);
+    -moz-box-shadow: 0px 0px 91px 5px rgba(153, 51, 255, 0.64);
+    box-shadow: 0px 0px 91px 5px rgba(153, 51, 255, 0.64);
     border-radius: 5px;
     font-size: 2em;
     font-weight: 600;
@@ -115,7 +115,7 @@ footer > h2 > a:hover {
 .box-outline {
     border-radius: 5px;
     margin: 10px 0;
-    outline: solid 1px #FF2B58;
+    outline: solid 1px #9933FF;
     padding: 10px 0;
     width: 100%;
 }
@@ -133,10 +133,10 @@ footer > h2 > a:hover {
 }
 
 .box-fill:hover {
-    background: #FF2B58;
-    -webkit-box-shadow:0px 0px 20px 2px rgba(255,43,89,0.2);
-    -moz-box-shadow: 0px 0px 20px 2px rgba(255,43,89,0.2);
-    box-shadow: 0px 0px 20px 2px rgba(255,43,89,0.2);
+    background: #9933FF;
+    -webkit-box-shadow:0px 0px 20px 2px rgba(153, 51, 255, 0.2);
+    -moz-box-shadow: 0px 0px 20px 2px rgba(153, 51, 255, 0.2);
+    box-shadow: 0px 0px 20px 2px rgba(153, 51, 255, 0.2);
     transform: scale(1.02);
     cursor: pointer;
 }
@@ -173,11 +173,11 @@ footer > h2 > a:hover {
     align-items: center;
     justify-content: center;
     display: flex;
-    background-color: #FF2B58;
+    background-color: #9933FF;
     color: #f1f1f1;
-    -webkit-box-shadow:0px 0px 91px 5px rgba(255,43,89,0.64);
-    -moz-box-shadow: 0px 0px 91px 5px rgba(255,43,89,0.64);
-    box-shadow: 0px 0px 91px 5px rgba(255,43,89,0.64);
+    -webkit-box-shadow:0px 0px 91px 5px rgba(153, 51, 255, 0.64);
+    -moz-box-shadow: 0px 0px 91px 5px rgba(153, 51, 255, 0.64);
+    box-shadow: 0px 0px 91px 5px rgba(153, 51, 255, 0.64);
     border-radius: 5px;
     font-size: 1.2em;
     font-weight: 600;
@@ -190,9 +190,9 @@ footer > h2 > a:hover {
 }
 
 .gdx-btn:hover {
-    -webkit-box-shadow:0px 0px 91px 10px rgba(255,43,89,0.8);
-    -moz-box-shadow: 0px 0px 91px 10px rgba(255,43,89,0.8);
-    box-shadow: 0px 0px 91px 10px rgba(255,43,89,0.8);
+    -webkit-box-shadow:0px 0px 91px 10px rgba(153, 51, 255, 0.8);
+    -moz-box-shadow: 0px 0px 91px 10px rgba(153, 51, 255, 0.8);
+    box-shadow: 0px 0px 91px 10px rgba(153, 51, 255, 0.8);
     transform: scale(1.1);
 }
 
@@ -204,9 +204,9 @@ dialog::backdrop {
 dialog {
     border: none;
     border-radius: 5px;
-    -webkit-box-shadow:0px 0px 91px 10px rgba(255,43,89,0.3);
-    -moz-box-shadow: 0px 0px 91px 10px rgba(255,43,89,0.3);
-    box-shadow: 0px 0px 91px 10px rgba(255,43,89,0.3);
+    -webkit-box-shadow:0px 0px 91px 10px rgba(153, 51, 255, 0.3);
+    -moz-box-shadow: 0px 0px 91px 10px rgba(153, 51, 255, 0.3);
+    box-shadow: 0px 0px 91px 10px rgba(153, 51, 255, 0.3);
     background-color: #161616;
     padding: 0;
     position: relative;
@@ -227,7 +227,7 @@ dialog {
 }
 
 dialog > h2 {
-    background: #FF2B58;
+    background: #9933FF;
     font-size: 2.5em;
     width: 100%;
     padding: 15px 0 15px 30px;
@@ -237,7 +237,7 @@ dialog > h2 {
 }
 
 .dialog-content {
-    border-right: 1px solid #FF2B58;
+    border-right: 1px solid #9933FF;
     padding-left: 30px;
     width: 85%;
 }
@@ -249,7 +249,7 @@ dialog > h2 {
 }
 
 .dialog-content > ul {
-    border-bottom: 1px solid #FF2B58;
+    border-bottom: 1px solid #9933FF;
     padding-left: 12px;
     padding-right: 26px;
     padding-bottom: 32px;
@@ -260,7 +260,7 @@ dialog > h2 {
 }
 
 .dialog-content > h3 {
-    color: #FF2B58;
+    color: #9933FF;
     font-size: 1.8em;
     padding: 12px 0 0;
     margin-left: auto;
@@ -313,7 +313,7 @@ dialog > h2 {
 }
 
 .curso {
-    background: #FF2B58;
+    background: #9933FF;
 }
 
 .close-intro, .close-conceitos-basicos, .close-gdd, .close-frameworks, .close-design-de-sistemas, .close-level-design, .close-planilhas, .close-balanceamento, .close-versionamento, .close-engines, .close-podcasts, .close-canais, .close-joga {
