@@ -1,12 +1,14 @@
 
+> **Nota:** Este é um fork do repositório [guia-do-game-designer](https://github.com/baptixta/guia-do-game-designer) criado por [Davi Baptista](https://github.com/baptixta). O objetivo deste fork é adaptar o conteúdo original para um guia focado em programadores de jogos.
+
 ![Site Gif](https://github.com/baptixta/game-design-refs/blob/main/images/ggd.gif "Site Gif")
-<a href="https://baptixta.github.io/guia-do-game-designer/" target="_blank">Acesse o Guia do Game Designer aqui</a>
+<a href="https://baptixta.github.io/guia-do-game-designer/" target="_blank">Acesse o Guia do Game Programmer aqui</a>
 <br><br>
 ## 🎯Objetivo
 
-A ideia desse repositório, é compartilhar conteúdo para ajudar Game Designers a se desenvolverem (de iniciantes até avançados). Se tiver algo legal para compartilhar, é só mandar um pull request :)
+A ideia desse repositório, é compartilhar conteúdo para ajudar Game Programmers a se desenvolverem (de iniciantes até avançados). Se tiver algo legal para compartilhar, é só mandar um pull request :)
 <br><br>
-Além de todos os links organizados e estruturados em níveis no site do [**Guia do Game Designer**](https://baptixta.github.io/guia-do-game-designer/), dentro desse readme tem diversos outros links categorizados e um pouco mais bagunçados pra você estudar se quiser.
+Além de todos os links organizados e estruturados em níveis no site do [**Guia do Game Programmer**](https://baptixta.github.io/guia-do-game-designer/), dentro desse readme tem diversos outros links categorizados e um pouco mais bagunçados pra você estudar se quiser.
 <br><br>
 
 ## 💻 O trabalho de um Game Designer:
