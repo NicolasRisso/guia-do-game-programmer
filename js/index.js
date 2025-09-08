@@ -1,6 +1,10 @@
 const btnModalIntro = document.querySelector(".intro")
 const modalIntro = document.querySelector(".modal-introducao")
-const buttonCloseIntro = document.querySelector(".close-intro") 
+const buttonCloseIntro = document.querySelector(".close-intro")
+
+const btnModalLogica = document.querySelector(".logica")
+const modalLogica = document.querySelector(".modal-logica")
+const buttonCloseLogica = document.querySelector(".close-logica") 
 
 const btnModalConceitosBasicos = document.querySelector(".conceitos-basicos")
 const modalConceitosBasicos = document.querySelector(".modal-conceitos-basicos")
@@ -62,6 +66,18 @@ buttonCloseIntro.onclick = function () {
     modalIntro.classList.add("dialog-close")
     modalIntro.classList.remove("dialog-open")
 }
+
+// modal Logica
+btnModalLogica.onclick = function () {
+    modalLogica.classList.remove("dialog-close")
+    modalLogica.classList.add("dialog-open")
+}
+
+buttonCloseLogica.onclick = function () {
+    modalLogica.classList.add("dialog-close")
+    modalLogica.classList.remove("dialog-open")
+}
+
 
 // modal conceitos básicos
 btnModalConceitosBasicos.onclick = function () {

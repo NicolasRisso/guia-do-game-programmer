@@ -316,7 +316,7 @@ dialog > h2 {
     background: #9933FF;
 }
 
-.close-intro, .close-conceitos-basicos, .close-gdd, .close-frameworks, .close-design-de-sistemas, .close-level-design, .close-planilhas, .close-balanceamento, .close-versionamento, .close-engines, .close-podcasts, .close-canais, .close-joga {
+.close-intro, .close-logica, .close-conceitos-basicos, .close-gdd, .close-frameworks, .close-design-de-sistemas, .close-level-design, .close-planilhas, .close-balanceamento, .close-versionamento, .close-engines, .close-podcasts, .close-canais, .close-joga {
     color: #f1f1f1;
     cursor: pointer;
     font-size: 2.5em;
@@ -335,7 +335,7 @@ dialog > h2 {
     top: 365px;
 }
 
-.modal-gdd {
+.modal-gdd, .modal-logica {
     top: 490px;
 }
 
