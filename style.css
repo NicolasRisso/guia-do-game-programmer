@@ -216,16 +216,6 @@ dialog {
     width: 100%;
 }
 
-.dialog-open {
-    pointer-events: initial;
-    opacity: 1;
-}
-
-.dialog-close {
-    pointer-events: none;
-    opacity: 0;
-}
-
 dialog > h2 {
     background: #9933FF;
     font-size: 2.5em;
@@ -316,7 +306,9 @@ dialog > h2 {
     background: #9933FF;
 }
 
-.close-intro, .close-logica, .close-conceitos-basicos, .close-gdd, .close-frameworks, .close-design-de-sistemas, .close-level-design, .close-planilhas, .close-balanceamento, .close-versionamento, .close-engines, .close-podcasts, .close-canais, .close-joga {
+.close-modal {
+    background: none;
+    border: none;
     color: #f1f1f1;
     cursor: pointer;
     font-size: 2.5em;
@@ -327,40 +319,8 @@ dialog > h2 {
     transition: .3s ease;
 }
 
-.close-intro:hover, .close-conceitos-basicos:hover, .close-gdd:hover, .close-frameworks:hover, .close-design-de-sistemas:hover, .close-level-design:hover, .close-planilhas:hover, .close-balanceamento:hover .close-versionamento:hover, .close-engines:hover, .close-podcasts:hover, .close-canais:hover, .close-joga:hover {
+.close-modal:hover {
     transform: scale(1.3);
-}
-
-.modal-introducao, .modal-conceitos-basicos {
-    top: 365px;
-}
-
-.modal-gdd, .modal-logica {
-    top: 490px;
-}
-
-.modal-frameworks, .modal-design-de-sistemas {
-    top: 665px;
-}
-
-.modal-level-design, .modal-planilhas {
-    top: 820px;
-}
-
-.modal-level-design, .modal-planilhas {
-    top: 820px;
-}
-
-.modal-balanceamento {
-    top: 888px;
-}
-
-.modal-versionamento, .modal-engines {
-    top: 1050px;
-}
-
-.modal-podcasts, .modal-canais, .modal-joga {
-    top: 1200px;
 }
 
 
@@ -413,7 +373,8 @@ dialog > h2 {
         padding-right: 12px;
     }
 
-    .close-intro, .close-conceitos-basicos, .close-gdd, .close-frameworks, .close-design-de-sistemas, .close-level-design, .close-planilhas, .close-balanceamento, .close-versionamento, .close-engines, .close-podcasts, .close-canais {
+    .close-modal {
         top: 0px;
+        right: 15px;
     }
 }
