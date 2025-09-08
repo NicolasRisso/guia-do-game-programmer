@@ -136,6 +136,7 @@
     </div>
 
 <!-- Modais -->
+    <!-- O que é a Programação de Jogos? -->
     <dialog class="modal modal-programacao-jogos">
         <h2>O que é a programação de jogos?</h2>
         <div class="dialog-content">
@@ -156,10 +157,47 @@
         </div>
         <button class="close-modal">x</button>
     </dialog>
+
+    <!-- Lógica de Programação -->
     <dialog class="modal modal-logica-programacao">
         <h2>Lógica de Programação</h2>
         <div class="dialog-content">
-            <p>[Inserir dados sobre "Lógica de Programação"]</p>
+            <ul>
+                <li><strong>Lógica de programação para jogos</strong> é a base que define como o jogo “pensa”: regras, condições, consequências e fluxo das ações.</li>
+                <li>Ela organiza decisões (if/else), repetições (loops), estados (ex.: parado, correndo, atacando) e eventos (ex.: levou dano, colidiu) para transformar mecânicas em comportamento real.</li>
+                <li>Com boa lógica, o jogo fica previsível para o computador e divertido/consistente para o jogador: menos bugs, sistemas claros e fácil evolução de features.</li>
+                <li>Antes do código final, descreva a solução em <em>pseudocódigo</em> e fluxos simples (passo a passo). Isso evita retrabalho e ajuda no planejamento.</li>
+            </ul>
+
+            <h3>Áreas da lógica para focar</h3>
+            <ul>
+                <li><strong>Fluxo de controle:</strong> if/else, switch, while/for, early return.</li>
+                <li><strong>Estruturas de dados:</strong> arrays/listas, filas/pilhas, dicionários (map), e quando usar cada uma.</li>
+                <li><strong>Máquinas de estados (FSM):</strong> trocar entre estados do personagem/inimigo sem “spaghetti code”.</li>
+                <li><strong>Eventos e mensagens:</strong> disparar e reagir a ações (input, colisões, triggers) sem dependências fortes.</li>
+                <li><strong>Tempo e atualização:</strong> uso correto de <em>delta time</em>, timers e ordens de execução (tick/update).</li>
+                <li><strong>Matemática básica de jogos:</strong> vetores, ângulos, distâncias, interpolações (lerp), aleatoriedade controlada.</li>
+                <li><strong>Arquitetura simples:</strong> separar responsabilidades (ex.: lógica, visual, dados) para facilitar manutenção.</li>
+            </ul>
+
+            <h3>O que é importante saber</h3>
+            <ul>
+                <li><strong>Decompor problemas:</strong> dividir a mecânica em passos pequenos (detectar, decidir, agir, verificar).</li>
+                <li><strong>Estados + transições claras:</strong> defina quando entra/sai de um estado e o que cada estado pode fazer.</li>
+                <li><strong>Determinismo onde importa:</strong> resultados consistentes para salvar/reproduzir, especialmente em multiplayer.</li>
+                <li><strong>Depuração:</strong> logs, asserts, visualização de colisões/paths e testes unitários simples.</li>
+                <li><strong>Complexidade:</strong> evite loops aninhados desnecessários; prefira buscas filtradas e cache de resultados.</li>
+                <li><strong>Dados dirigindo comportamento:</strong> parametrizar valores (velocidades, danos, cooldowns) fora do código.</li>
+                <li><strong>Iteração segura:</strong> começar simples, validar, otimizar depois (profiling antes de micro-otimizações).</li>
+            </ul>
+
+            <h3>Conteúdo Recomendado</h3>
+
+            <div class="dialog-recomendations">
+                <a href="https://www.youtube.com/watch?v=eANjGomWZp4" target="_blank"><span class="recomendation youtube">Youtube</span>Game Development for Dummies</a>
+                <a href="https://www.youtube.com/watch?v=A8SythA_P_U" target="_blank"><span class="recomendation youtube">Youtube</span>Best Games to Teach you - HOW TO CODE</a>
+                <a href="https://www.youtube.com/watch?v=vpSLpZc6TnU" target="_blank"><span class="recomendation youtube">Youtube</span>A Realistic Day in the Life of a FULL TIME Game Developer!</a>
+            </div>
         </div>
         <button class="close-modal">x</button>
     </dialog>
