@@ -25,29 +25,29 @@
                 Nível 1 
             </div>
             <div class="box-divider">
-                <div class="box-fill intro">
+                <div class="box-fill" data-modal-target="programacao-jogos">
                     O que é a programação de jogos?
                 </div>
             </div>    
             <div class="box-divider">
-                <div class="box-fill logica">
+                <div class="box-fill" data-modal-target="logica-programacao">
                     Lógica de Programação
                 </div>
-                <div class="box-fill gdd">
+                <div class="box-fill" data-modal-target="conceitos-paradigmas">
                     Conceitos Básicos e Paradigmas
                 </div>
             </div>
             <div class="box-divider">
-                <div class="box-fill gdd">
+                <div class="box-fill" data-modal-target="matematica-fisica">
                     Matemática e Física
                 </div>
-                <div class="box-fill gdd">
+                <div class="box-fill" data-modal-target="ferramentas">
                     Ferramentas mais usadas
                 </div>
             </div>
 
             <div class="box-divider">
-                <div class="box-fill gdd">
+                <div class="box-fill" data-modal-target="o-que-sao-engines">
                     O que são Engines?
                 </div>
             </div>
@@ -57,21 +57,21 @@
             </div>
 
             <div class="box-divider">
-                <div class="box-fill frameworks">
+                <div class="box-fill" data-modal-target="arquitetura-software">
                     Arquitetura de Software
                 </div>
             </div>
 
             <div class="box-divider">
-                <div class="box-fill design-de-sistemas">
+                <div class="box-fill" data-modal-target="inteligencia-artificial">
                     Inteligência Artificial
                 </div>
-                <div class="box-fill level-design">
+                <div class="box-fill" data-modal-target="padroes-projeto">
                     Padrões de Projeto
                 </div>
             </div>
             <div class="box-divider">
-                <div class="box-fill balanceamento">
+                <div class="box-fill" data-modal-target="otimizacao-performance">
                     Otimização e Performance
                 </div>
             </div>  
@@ -80,19 +80,19 @@
                 Nível 3
             </div>
             
-            <div class="box-divider versionamento">
-                <div class="box-fill">
+            <div class="box-divider">
+                <div class="box-fill" data-modal-target="controle-versao">
                     Controle de Versão
                 </div>
-                <div class="box-fill">
+                <div class="box-fill" data-modal-target="build-automacao">
                     Build e Automação
                 </div>
             </div>
-            <div class="box-divider engines">
-                <div class="box-fill">
+            <div class="box-divider">
+                <div class="box-fill" data-modal-target="arquitetura-redes">
                     Arquitetura de Redes
                 </div>
-                <div class="box-fill">
+                <div class="box-fill" data-modal-target="testes-codigo">
                     Testes de Código
                 </div>
             </div>   
@@ -102,28 +102,28 @@
             </div>
             
             <div class="box-divider">
-                <div class="box-fill podcasts">
+                <div class="box-fill" data-modal-target="comunidade">
                     A Importância de uma Comunidade
                 </div>
             </div>
             <div class="box-divider">
-                <div class="box-fill podcasts">
+                <div class="box-fill" data-modal-target="podcasts">
                     Podcasts
                 </div>
-                <div class="box-fill canais">
+                <div class="box-fill" data-modal-target="canais">
                     Canais
                 </div>
             </div>
             <div class="box-divider">
-                <div class="box-fill podcasts">
+                <div class="box-fill" data-modal-target="portfolio">
                     Portfólio
                 </div>
-                <div class="box-fill podcasts">
+                <div class="box-fill" data-modal-target="game-design">
                     Game Design
                 </div>
             </div>
             <div class="box-divider">
-                <div class="box-fill canais">
+                <div class="box-fill" data-modal-target="leituras-recomendadas">
                     Leituras Recomendadas
                 </div>
             </div>
@@ -136,340 +136,146 @@
     </div>
 
 <!-- Modais -->
-    <!-- Modal Introdução-->
-    <dialog class="modal-introducao dialog-close" open>
-        <h2>Introdução</h2>
-
+    <dialog class="modal modal-programacao-jogos">
+        <h2>O que é a programação de jogos?</h2>
         <div class="dialog-content">
-            <ul>
-                <li>A programação de jogos é a área responsável por dar vida às ideias e conceitos criados pelos game designers.</li>
-                <li>É a disciplina que traduz as regras, mecânicas e sistemas do jogo em código, permitindo que os jogadores interajam com o mundo virtual.</li>
-                <li>Um bom programador de jogos não apenas domina a lógica e a tecnologia, mas também compreende os princípios de design para criar uma experiência de jogo fluida, otimizada e divertida.</li>
-                <li>Além de programar o próprio jogo em si, Game Engineers (Sinônimo de Game Programmer) tambem são responsáveis por desenvolver ferramentas para uso interno da equipe. Como uma funcionalidade de gerar NPCs aleatórios no mapa que seguem uma rotina, por exemplo.</li>
-            </ul>
-    
-            <h3>Conteúdo Recomendado</h3>
-
-            <div class="dialog-recomendations">
-                <a href="https://www.youtube.com/watch?v=eANjGomWZp4" target="_blank"><span class="recomendation youtube">Youtube</span>Game Development for Dummies</a>
-                <a href="https://www.youtube.com/watch?v=A8SythA_P_U" target="_blank"><span class="recomendation youtube">Youtube</span>Best Games to Teach you - HOW TO CODE</a>
-                <a href="https://www.youtube.com/watch?v=vpSLpZc6TnU" target="_blank"><span class="recomendation youtube">Youtube</span>A Realistic Day in the Life of a FULL TIME Game Developer!</a>
-            </div>
-        </div>        
-
-        <div class="close-intro">
-            x
+            <p>[Inserir dados sobre "O que é a programação de jogos?"]</p>
         </div>
+        <button class="close-modal">x</button>
     </dialog>
-
-    <!-- Modal Lógica de Programação-->
-    <dialog class="modal-logica dialog-close" open>
+    <dialog class="modal modal-logica-programacao">
         <h2>Lógica de Programação</h2>
-
         <div class="dialog-content">
-            <ul>
-                <li>A programação de jogos é a área responsável por dar vida às ideias e conceitos criados pelos game designers.</li>
-                <li>É a disciplina que traduz as regras, mecânicas e sistemas do jogo em código, permitindo que os jogadores interajam com o mundo virtual.</li>
-                <li>Um bom programador de jogos não apenas domina a lógica e a tecnologia, mas também compreende os princípios de design para criar uma experiência de jogo fluida, otimizada e divertida.</li>
-                <li>Além de programar o próprio jogo em si, Game Engineers (Sinônimo de Game Programmer) tambem são responsáveis por desenvolver ferramentas para uso interno da equipe. Como uma funcionalidade de gerar NPCs aleatórios no mapa que seguem uma rotina, por exemplo.</li>
-            </ul>
-
-            <h3>Conteúdo Recomendado</h3>
-
-            <div class="dialog-recomendations">
-                <a href="https://www.youtube.com/watch?v=eANjGomWZp4" target="_blank"><span class="recomendation youtube">Youtube</span>Game Development for Dummies</a>
-                <a href="https://www.youtube.com/watch?v=A8SythA_P_U" target="_blank"><span class="recomendation youtube">Youtube</span>Best Games to Teach you - HOW TO CODE</a>
-                <a href="https://www.youtube.com/watch?v=vpSLpZc6TnU" target="_blank"><span class="recomendation youtube">Youtube</span>A Realistic Day in the Life of a FULL TIME Game Developer!</a>
-            </div>
+            <p>[Inserir dados sobre "Lógica de Programação"]</p>
         </div>
-
-        <div class="close-logica">
-            x
-        </div>
+        <button class="close-modal">x</button>
     </dialog>
-
-    <!-- Modal Conceitos Básicos-->
-    <dialog class="modal-conceitos-basicos dialog-close" open>
-        <h2>Conceitos Básicos</h2>
-
+    <dialog class="modal modal-conceitos-paradigmas">
+        <h2>Conceitos Básicos e Paradigmas</h2>
         <div class="dialog-content">
-            <ul>
-                <li>Para se tornar um programador de jogos, é fundamental dominar alguns conceitos basicos da programação. A lista dos principais está abaixo 👇</li>
-                    <ul>
-                        <li>Lógica de Programação</li>
-                        <li>Estrutura de Dados</li>
-                        <li>Algoritmos</li>
-                        <li>Orientação a Objetos</li>
-                        <li>Arquitetura de Software</li>
-                        <li>C++</li>
-                        <li>C#</li>
-                        <li>Algebra Linear</li>
-                        <li>Cálculo</li>
-                        <li>Física</li>
-                    </ul>
-            </ul>
-    
-            <h3>Conteúdo Recomendado</h3>
-
-            <div class="dialog-recomendations">
-                <a href="https://www.youtube.com/watch?v=i-35-T33Csw" target="_blank"><span class="recomendation youtube">Youtube</span>How to Start Programming for Games - Programming Fundamentals</a>
-                <a href="https://www.youtube.com/watch?v=p_s19gG2j9s" target="_blank"><span class="recomendation youtube">Youtube</span>Data Structures and Algorithms for Game Developers</a>
-                <a href="https://www.youtube.com/watch?v=s_j_t24u6iM" target="_blank"><span class="recomendation youtube">Youtube</span>Mathematics for Game Programmers</a>
-            </div>
-        </div>        
-
-        <div class="close-conceitos-basicos">
-            x
+            <p>[Inserir dados sobre "Conceitos Básicos e Paradigmas"]</p>
         </div>
+        <button class="close-modal">x</button>
     </dialog>
-
-    <!-- Modal Arquitetura de Software -->
-    <dialog class="modal-gdd dialog-close" open>
+    <dialog class="modal modal-matematica-fisica">
+        <h2>Matemática e Física</h2>
+        <div class="dialog-content">
+            <p>[Inserir dados sobre "Matemática e Física"]</p>
+        </div>
+        <button class="close-modal">x</button>
+    </dialog>
+    <dialog class="modal modal-ferramentas">
+        <h2>Ferramentas mais usadas</h2>
+        <div class="dialog-content">
+            <p>[Inserir dados sobre "Ferramentas mais usadas"]</p>
+        </div>
+        <button class="close-modal">x</button>
+    </dialog>
+    <dialog class="modal modal-o-que-sao-engines">
+        <h2>O que são Engines?</h2>
+        <div class="dialog-content">
+            <p>[Inserir dados sobre "O que são Engines?"]</p>
+        </div>
+        <button class="close-modal">x</button>
+    </dialog>
+    <dialog class="modal modal-arquitetura-software">
         <h2>Arquitetura de Software</h2>
-
         <div class="dialog-content">
-            <ul>
-                <li>A arquitetura de software é a base sobre a qual um jogo é construído.</li>
-                <li>Ela define como os diferentes componentes do jogo se comunicam e interagem, garantindo que o código seja organizado, escalável e de fácil manutenção.</li>
-                <li>Bons programadores de jogos dedicam tempo para planejar a arquitetura antes de escrever uma única linha de código, o que economiza tempo e evita dores de cabeça no futuro.</li>
-            </ul>
-    
-            <h3>Conteúdo Recomendado</h3>
-
-            <div class="dialog-recomendations">
-                <a href="https://www.youtube.com/watch?v=N26n9g3f_8c" target="_blank"><span class="recomendation youtube">Youtube</span>Game Architecture - A Practical Approach</a>
-                <a href="https://www.youtube.com/watch?v=1a7k14p5_sA" target="_blank"><span class="recomendation youtube">Youtube</span>Software Architecture for Game Developers</a>
-                <a href="https://www.gamedeveloper.com/programming/game-programming-patterns" target="_blank"><span class="recomendation artigo">Artigo</span>Game Programming Patterns</a>
-            </div>
-        </div>        
-
-        <div class="close-gdd">
-            x
+            <p>[Inserir dados sobre "Arquitetura de Software"]</p>
         </div>
+        <button class="close-modal">x</button>
     </dialog>
-
-    <!-- Modal Padrões de Projeto -->
-    <dialog class="modal-frameworks dialog-close" open>
-        <h2>Padrões de Projeto</h2>
-
-        <div class="dialog-content">
-            <ul>
-                <li>Padrões de projeto (Design Patterns) são soluções reutilizáveis para problemas comuns que ocorrem no desenvolvimento de software.</li>
-                <li>No desenvolvimento de jogos, os padrões de projeto ajudam a criar um código mais flexível, modular e fácil de entender.</li>
-                <li>Conhecer e aplicar padrões de projeto é uma habilidade essencial para qualquer programador de jogos que deseja criar sistemas complexos e robustos.</li>
-            </ul>
-    
-            <h3>Conteúdo Recomendado</h3>
-
-            <div class="dialog-recomendations">
-                <a href="https://www.youtube.com/watch?v=s_J_t24u6iM" target="_blank"><span class="recomendation youtube">Youtube</span>Design Patterns for Game Development</a>
-                <a href="https://gameprogrammingpatterns.com/" target="_blank"><span class="recomendation artigo">Livro</span>Game Programming Patterns (livro online gratuito)</a>
-                <a href="https://www.youtube.com/playlist?list=PL_QPQmz5C6W-g6W9i_G_0e4a_a_c9ZvuI" target="_blank"><span class="recomendation youtube">Youtube</span>Playlist sobre Padrões de Projeto para Jogos</a>
-            </div>
-        </div>        
-
-        <div class="close-frameworks">
-            x
-        </div>
-    </dialog>
-
-    <!-- Modal Inteligência Artificial -->
-    <dialog class="modal-design-de-sistemas dialog-close" open>
+    <dialog class="modal modal-inteligencia-artificial">
         <h2>Inteligência Artificial</h2>
-
         <div class="dialog-content">
-            <ul>
-                <li>A Inteligência Artificial (IA) é o que dá vida e autonomia aos personagens não-jogáveis (NPCs) e inimigos em um jogo.</li>
-                <li>A IA em jogos abrange desde a simples tomada de decisões até comportamentos complexos e adaptativos.</li>
-                <li>Um bom programador de IA é capaz de criar personagens que parecem inteligentes e que proporcionam desafios interessantes para os jogadores.</li>
-            </ul>
-    
-            <h3>Conteúdo Recomendado</h3>
-
-            <div class="dialog-recomendations">
-                <a href="https://www.youtube.com/watch?v=svb8YyL2s-w" target="_blank"><span class="recomendation youtube">Youtube</span>AI for Game Developers</a>
-                <a href="https://www.youtube.com/watch?v=R9c-_neA_I0" target="_blank"><span class="recomendation youtube">Youtube</span>The AI of The Last of Us</a>
-                <a href="https://www.red3d.com/cwr/" target="_blank"><span class="recomendation artigo">Artigo</span>AI on the Web</a>
-            </div>
-        </div>        
-
-        <div class="close-design-de-sistemas">
-            x
+            <p>[Inserir dados sobre "Inteligência Artificial"]</p>
         </div>
+        <button class="close-modal">x</button>
     </dialog>
-
-    <!-- Modal Gráficos -->
-    <dialog class="modal-level-design dialog-close" open>
-        <h2>Gráficos</h2>
-
+    <dialog class="modal modal-padroes-projeto">
+        <h2>Padrões de Projeto</h2>
         <div class="dialog-content">
-            <ul>
-                <li>A programação gráfica é uma das áreas mais fascinantes e desafiadoras da programação de jogos.</li>
-                <li>Ela envolve a criação de tudo o que o jogador vê na tela, desde a renderização de modelos 3D até a implementação de efeitos visuais impressionantes.</li>
-                <li>Um bom programador de gráficos precisa ter um conhecimento sólido de matemática, física e algoritmos, além de um olho para a estética.</li>
-            </ul>
-    
-            <h3>Conteúdo Recomendado</h3>
-
-            <div class="dialog-recomendations">
-                <a href="https://www.youtube.com/watch?v=0n5y-N43_kM" target="_blank"><span class="recomendation youtube">Youtube</span>Introduction to 3D Graphics Programming</a>
-                <a href="https://www.youtube.com/watch?v=f4s1h2YETNY" target="_blank"><span class="recomendation youtube">Youtube</span>How Shaders Work</a>
-                <a href="https://learnopengl.com/" target="_blank"><span class="recomendation artigo">Tutorial</span>LearnOpenGL.com</a>
-            </div>
-        </div>        
-
-        <div class="close-level-design">
-            x
+            <p>[Inserir dados sobre "Padrões de Projeto"]</p>
         </div>
+        <button class="close-modal">x</button>
     </dialog>
-
-     <!-- Modal Ferramentas -->
-     <dialog class="modal-planilhas dialog-close" open>
-        <h2>Ferramentas</h2>
-
+    <dialog class="modal modal-otimizacao-performance">
+        <h2>Otimização e Performance</h2>
         <div class="dialog-content">
-            <ul>
-                <li>Além de dominar as linguagens de programação e as engines, um bom programador de jogos também conhece e utiliza uma variedade de ferramentas.</li>
-                <li>Essas ferramentas podem incluir depuradores, profilers, sistemas de controle de versão e editores de script.</li>
-                <li>Dominar as ferramentas certas pode aumentar drasticamente a produtividade e a qualidade do seu trabalho.</li>
-            </ul>
-    
-            <h3>Conteúdo Recomendado</h3>
-
-            <div class="dialog-recomendations">
-                <a href="https://www.youtube.com/watch?v=r1-6D1l2g2E" target="_blank"><span class="recomendation youtube">Youtube</span>Essential Tools for Game Developers</a>
-                <a href="https://www.youtube.com/watch?v=T33so71A41c" target="_blank"><span class="recomendation youtube">Youtube</span>Debugging in Unity</a>
-                <a href="https://docs.unrealengine.com/en-US/Engine/Performance/Profiler/index.html" target="_blank"><span class="recomendation artigo">Artigo</span>Unreal Engine Profiler</a>
-            </div>
-        </div>        
-
-        <div class="close-planilhas">
-            x
+            <p>[Inserir dados sobre "Otimização e Performance"]</p>
         </div>
+        <button class="close-modal">x</button>
     </dialog>
-
-    <!-- Modal Otimização -->
-    <dialog class="modal-balanceamento dialog-close" open>
-        <h2>Otimização</h2>
-
-        <div class="dialog-content">
-            <ul>
-                <li>A otimização é o processo de fazer um jogo rodar da forma mais suave e eficiente possível.</li>
-                <li>Isso envolve a identificação e a correção de gargalos de desempenho, a redução do uso de memória e a garantia de que o jogo funcione bem em uma variedade de hardware.</li>
-                <li>Um bom programador de jogos sabe como usar profilers e outras ferramentas para encontrar e corrigir problemas de desempenho, garantindo que os jogadores tenham a melhor experiência possível.</li>
-            </ul>
-    
-            <h3>Conteúdo Recomendado</h3>
-
-            <div class="dialog-recomendations">
-                <a href="https://www.youtube.com/watch?v=kpc-8-2V_sE" target="_blank"><span class="recomendation youtube">Youtube</span>Game Performance Optimization</a>
-                <a href="https://unity.com/how-to/optimize-your-game-performance-mobile-console-and-pc" target="_blank"><span class="recomendation artigo">Artigo</span>Optimize your game performance for mobile, console, and PC</a>
-                <a href="https://docs.unrealengine.com/en-US/Engine/Performance/index.html" target="_blank"><span class="recomendation artigo">Artigo</span>Unreal Engine Performance and Profiling</a>
-            </div>
-        </div>        
-
-        <div class="close-balanceamento">
-            x
-        </div>
-    </dialog>
-
-    <!-- Modal Controle de Versão -->
-    <dialog class="modal-versionamento dialog-close" open>
+    <dialog class="modal modal-controle-versao">
         <h2>Controle de Versão</h2>
-
         <div class="dialog-content">
-            <ul>
-                <li>O controle de versão é uma ferramenta essencial para qualquer equipe de desenvolvimento de jogos.</li>
-                <li>Ele permite que vários programadores trabalhem no mesmo projeto simultaneamente, sem o risco de sobrescrever o trabalho uns dos outros.</li>
-                <li>O Git é o sistema de controle de versão mais popular do mundo, e é uma habilidade essencial para qualquer programador de jogos.</li>
-            </ul>
-    
-            <h3>Conteúdo Recomendado</h3>
-
-            <div class="dialog-recomendations">
-                <a href="https://www.youtube.com/watch?v=UaC-2-a_Y1I" target="_blank"><span class="recomendation youtube">Youtube</span>Git for Game Developers</a>
-                <a href="https://www.youtube.com/watch?v=2k9S-pcB0I4" target="_blank"><span class="recomendation youtube">Youtube</span>Git for Unity Developers</a>
-                <a href="https://git-scm.com/book/en/v2" target="_blank"><span class="recomendation artigo">Livro</span>Pro Git (livro online gratuito)</a>
-            </div>
-        </div>        
-
-        <div class="close-versionamento">
-            x
+            <p>[Inserir dados sobre "Controle de Versão"]</p>
         </div>
+        <button class="close-modal">x</button>
     </dialog>
-
-    <!-- Modal Engines -->
-    <dialog class="modal-engines dialog-close" open>
-        <h2>Engines</h2>
-
+    <dialog class="modal modal-build-automacao">
+        <h2>Build e Automação</h2>
         <div class="dialog-content">
-            <ul>
-                <li>As engines de jogos são a base sobre a qual a maioria dos jogos modernos são construídos.</li>
-                <li>Elas fornecem um conjunto de ferramentas e funcionalidades que aceleram o processo de desenvolvimento, permitindo que os programadores se concentrem na criação da jogabilidade.</li>
-                <li>Dominar uma ou mais engines de jogos é uma habilidade essencial para qualquer programador de jogos.</li>
-            </ul>
-    
-            <h3>Conteúdo Recomendado</h3>
-
-            <div class="dialog-recomendations">
-                <a href="https://unity.com/" target="_blank"><span class="recomendation artigo">Engine</span>Unity</a>
-                <a href="https://www.unrealengine.com/" target="_blank"><span class="recomendation artigo">Engine</span>Unreal Engine</a>
-                <a href="https://godotengine.org/" target="_blank"><span class="recomendation artigo">Engine</span>Godot Engine</a>
-            </div>
-        </div>        
-
-        <div class="close-engines">
-            x
+            <p>[Inserir dados sobre "Build e Automação"]</p>
         </div>
-    </dialog>  
-
-    <!-- Modal Podcasts -->
-    <dialog class="modal-podcasts dialog-close" open>
+        <button class="close-modal">x</button>
+    </dialog>
+    <dialog class="modal modal-arquitetura-redes">
+        <h2>Arquitetura de Redes</h2>
+        <div class="dialog-content">
+            <p>[Inserir dados sobre "Arquitetura de Redes"]</p>
+        </div>
+        <button class="close-modal">x</button>
+    </dialog>
+    <dialog class="modal modal-testes-codigo">
+        <h2>Testes de Código</h2>
+        <div class="dialog-content">
+            <p>[Inserir dados sobre "Testes de Código"]</p>
+        </div>
+        <button class="close-modal">x</button>
+    </dialog>
+    <dialog class="modal modal-comunidade">
+        <h2>A Importância de uma Comunidade</h2>
+        <div class="dialog-content">
+            <p>[Inserir dados sobre "A Importância de uma Comunidade"]</p>
+        </div>
+        <button class="close-modal">x</button>
+    </dialog>
+    <dialog class="modal modal-podcasts">
         <h2>Podcasts</h2>
-
         <div class="dialog-content">
-            <ul>
-                <li>A seção extra do guia tem conteúdos que valem a pena acompanhar pra ficar por dentro da indústria de jogos, e aprender com a vivência de outros profissionais.</li>
-                <li>Essa seção compartilho os podcasts que acompanho ou já acompanhei e que aprendi ou me inspirei ouvindo.</li>
-            </ul>
-    
-            <h3>Conteúdo Recomendado</h3>
-
-            <div class="dialog-recomendations">
-                <a href="https://open.spotify.com/show/6PvyZNI5qIL5EyhSXuX3Zw?si=312d567ddbd04183" target="_blank"><span class="recomendation youtube">Podcast</span>Game Dev Unplugged</a>
-                <a href="https://open.spotify.com/show/3WReGMZA3GcqC7iGeuKewE?si=32a75c55ea2640fc" target="_blank"><span class="recomendation youtube">Podcast</span>The Debug Log</a>
-                <a href="https://open.spotify.com/show/4VHsfmQkt3lVbEVBpdm5jD?si=b56496ecad354ae4" target="_blank"><span class="recomendation youtube">Podcast</span>Game Dev Advice</a>
-            </div>
-        </div>        
-
-        <div class="close-podcasts">
-            x
+            <p>[Inserir dados sobre "Podcasts"]</p>
         </div>
-    </dialog>  
-
-    <!-- Modal Canais -->
-    <dialog class="modal-canais dialog-close" open>
+        <button class="close-modal">x</button>
+    </dialog>
+    <dialog class="modal modal-canais">
         <h2>Canais</h2>
-
         <div class="dialog-content">
-            <ul>
-                <li>A seção extra do guia tem conteúdos que valem a pena acompanhar pra ficar por dentro da indústria de jogos, e aprender com a vivência de outros profissionais.</li>
-                <li>Essa seção compartilho os canais que acompanho ou já acompanhei e que aprendi ou me inspirei ouvindo.</li>
-            </ul>
-    
-            <h3>Conteúdo Recomendado</h3>
-
-            <div class="dialog-recomendations">
-                <a href="https://www.youtube.com/@TheCherno" target="_blank"><span class="recomendation youtube">Youtube</span>The Cherno</a>
-                <a href="https://www.youtube.com/@javidx9" target="_blank"><span class="recomendation youtube">Youtube</span>javidx9</a>
-                <a href="https://www.youtube.com/@freecodecamp" target="_blank"><span class="recomendation youtube">Youtube</span>freeCodeCamp.org</a>
-            </div>
-        </div>        
-
-        <div class="close-canais">
-            x
+            <p>[Inserir dados sobre "Canais"]</p>
         </div>
-    </dialog>  
+        <button class="close-modal">x</button>
+    </dialog>
+    <dialog class="modal modal-portfolio">
+        <h2>Portfólio</h2>
+        <div class="dialog-content">
+            <p>[Inserir dados sobre "Portfólio"]</p>
+        </div>
+        <button class="close-modal">x</button>
+    </dialog>
+    <dialog class="modal modal-game-design">
+        <h2>Game Design</h2>
+        <div class="dialog-content">
+            <p>[Inserir dados sobre "Game Design"]</p>
+        </div>
+        <button class="close-modal">x</button>
+    </dialog>
+    <dialog class="modal modal-leituras-recomendadas">
+        <h2>Leituras Recomendadas</h2>
+        <div class="dialog-content">
+            <p>[Inserir dados sobre "Leituras Recomendadas"]</p>
+        </div>
+        <button class="close-modal">x</button>
+    </dialog>
 
     <div class="gdx">
         <div class="gdx-info">
