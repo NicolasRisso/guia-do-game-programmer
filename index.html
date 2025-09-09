@@ -496,10 +496,55 @@
         </div>
         <button class="close-modal">x</button>
     </dialog>
+    <!-- Otimização e Performance -->
     <dialog class="modal modal-otimizacao-performance">
         <h2>Otimização e Performance</h2>
         <div class="dialog-content">
-            <p>[Inserir dados sobre "Otimização e Performance"]</p>
+            <ul>
+                <li><strong>Otimização e Performance</strong> são etapas fundamentais no desenvolvimento de jogos para garantir que o jogo rode de forma fluida, estável e com boa experiência para o jogador.</li>
+                <li>O foco é reduzir uso de CPU, GPU e memória sem comprometer a jogabilidade ou a qualidade visual.</li>
+                <li>Nem sempre otimizar significa deixar “mais rápido”, mas sim equilibrar custo e benefício entre desempenho e qualidade.</li>
+            </ul>
+
+            <h3>Boas práticas</h3>
+            <ul>
+                <li><strong>Profiling primeiro:</strong> medir onde estão os gargalos antes de otimizar.</li>
+                <li><strong>Evitar loops desnecessários:</strong> reduzir cálculos repetidos em cada frame.</li>
+                <li><strong>Pooling de objetos:</strong> reutilizar instâncias (inimigos, projéteis) em vez de criar/destruir constantemente.</li>
+                <li><strong>Culling e LOD:</strong> renderizar apenas o que está visível (occlusion culling) e usar níveis de detalhe em modelos distantes.</li>
+                <li><strong>Batching de draw calls:</strong> agrupar objetos semelhantes para reduzir chamadas de renderização.</li>
+                <li><strong>Uso eficiente de física:</strong> simplificar colisores, limitar cálculos complexos, usar triggers quando possível.</li>
+                <li><strong>Gerenciamento de memória:</strong> descarregar assets não usados, comprimir texturas, evitar vazamentos de memória.</li>
+                <li><strong>Multithreading:</strong> distribuir tarefas pesadas (IA, carregamento de dados) em threads separadas.</li>
+            </ul>
+
+            <h3>Áreas comuns de otimização</h3>
+            <ul>
+                <li><strong>Gráficos:</strong> shaders otimizados, menos polígonos, iluminação bem configurada.</li>
+                <li><strong>Scripts:</strong> reduzir chamadas no Update/ Tick, preferir eventos e timers.</li>
+                <li><strong>Áudio:</strong> comprimir arquivos, usar streaming em vez de carregar tudo na memória.</li>
+                <li><strong>Rede:</strong> minimizar tráfego de dados, compressão de pacotes, sincronização eficiente.</li>
+            </ul>
+
+            <h3>Importância</h3>
+            <ul>
+                <li><strong>Experiência do jogador:</strong> frame rate estável e tempo de resposta rápido.</li>
+                <li><strong>Compatibilidade:</strong> jogos que rodam bem em dispositivos mais fracos alcançam mais público.</li>
+                <li><strong>Escalabilidade:</strong> otimizações permitem adicionar novos recursos sem quebrar performance.</li>
+            </ul>
+
+            <h3>Conteúdo Recomendado</h3>
+            <div class="dialog-recomendations">
+                <a href="https://www.youtube.com/watch?v=l_JAk9xGMvk" target="_blank"><span class="recomendation youtube">Youtube</span>The Art of Game Optimization</a>
+                <a href="https://codefinity.com/blog/Optimization-Techniques-in-Game-Development" target="_blank"><span class="recomendation site">Site</span>Optimization Techniques in Game Development</a>
+                <a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/testing-and-optimizing-your-content?application_version=5.4" target="_blank"><span class="recomendation site">Site</span>Testing and Optimizing Your Content</a>
+                <a href="https://www.intel.com/content/www/us/en/docs/gpa/user-guide/2022-4/game-optimization-methodology.html" target="_blank"><span class="recomendation site">Site</span>Game Optimization Methodology</a>
+                <a href="https://www.cgspectrum.com/blog/what-is-level-of-detail-lod-3d-modeling" target="_blank"><span class="recomendation site">Site</span>What is LOD (Level Of Detail) in 3D Modeling?</a>
+                <a href="https://medium.com/@rgbguy/batch-rendering-101-f4627ccb6ee8" target="_blank"><span class="recomendation site">Site</span>Batch Rendering 101</a>
+                <a href="https://vkguide.dev/docs/extra-chapter/multithreading" target="_blank"><span class="recomendation site">Site</span>Multithreading Overview</a>
+                <a href="https://www.cherishdev.com/blog/testing-multithreading-in-games" target="_blank"><span class="recomendation site">Site</span>Testing Multithreading in Games</a>
+                <a href="https://www.researchgate.net/publication/374347021_RESEARCH_ON_CALCULATION_OPTIMIZATION_METHODS_USED_IN_COMPUTER_GAMES_DEVELOPMENT" target="_blank"><span class="recomendation artigo">Artigo</span>Research on Calculation Optimization Methods Used in Computer Games Development</a>
+            </div>
         </div>
         <button class="close-modal">x</button>
     </dialog>
