@@ -368,10 +368,31 @@
         </div>
         <button class="close-modal">x</button>
     </dialog>
+    <!-- Arquitetura de Software -->
     <dialog class="modal modal-arquitetura-software">
         <h2>Arquitetura de Software</h2>
         <div class="dialog-content">
-            <p>[Inserir dados sobre "Arquitetura de Software"]</p>
+            <ul>
+                <li><strong>Arquitetura de software</strong> é a forma como organizamos e estruturamos o código e os sistemas de um jogo para que sejam claros, escaláveis e fáceis de manter.</li>
+                <li>Ela define como os módulos se comunicam, separa responsabilidades e ajuda a evitar código bagunçado (spaghetti code).</li>
+            </ul>
+
+            <h3>Arquiteturas mais usadas em Game Programming</h3>
+            <ul>
+                <li><strong>Programação Estruturada:</strong> fluxo simples, baseado em funções e procedimentos. Boa para jogos pequenos.</li>
+                <li><strong>Orientada a Objetos (OOP):</strong> organiza o código em classes e objetos, muito usada em Unity (C#) e Unreal (C++).</li>
+                <li><strong>Component-Based:</strong> divide comportamentos em componentes que podem ser adicionados e removidos de objetos (padrão usado em Unity e Unreal).</li>
+                <li><strong>Entity-Component-System (ECS):</strong> separa dados (entidades), comportamentos (sistemas) e propriedades (componentes). Focado em performance e usado em jogos de grande escala.</li>
+                <li><strong>Event-Driven:</strong> módulos se comunicam por eventos e mensagens, reduzindo dependências diretas entre classes.</li>
+            </ul>
+
+            <h3>Conteúdo Recomendado</h3>
+
+            <div class="dialog-recomendations">
+                <a href="https://www.youtube.com/watch?v=2rW7ALyHaas" target="_blank"><span class="recomendation youtube">Youtube</span>Entity Component System Overview in 7 Minutes</a>
+                <a href="https://www.youtube.com/watch?v=X-E1uXdpYNA" target="_blank"><span class="recomendation youtube">Youtube</span>Event-Driven in Videogames: The Hidden Power of Game Development</a>
+                <a href="https://lbodev.com.br/glossario/o-que-e-component-based-architecture" target="_blank"><span class="recomendation site">Site</span>O que é Component-Based Architecture</a>
+            </div>
         </div>
         <button class="close-modal">x</button>
     </dialog>
