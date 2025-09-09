@@ -396,17 +396,95 @@
         </div>
         <button class="close-modal">x</button>
     </dialog>
+    <!-- Inteligência Artificial -->
     <dialog class="modal modal-inteligencia-artificial">
         <h2>Inteligência Artificial</h2>
         <div class="dialog-content">
-            <p>[Inserir dados sobre "Inteligência Artificial"]</p>
+            <ul>
+                <li><strong>Inteligência Artificial (IA) em jogos</strong> não é a mesma coisa que IA generativa (como ChatGPT ou modelos de imagem). Aqui, trata-se de técnicas focadas em controlar inimigos, NPCs e sistemas do jogo.</li>
+                <li>O objetivo não é criar “consciência”, mas sim simular decisões e comportamentos que pareçam inteligentes para o jogador.</li>
+                <li>A IA de jogos precisa ser previsível, ajustável e eficiente, para manter o equilíbrio e a diversão.</li>
+            </ul>
+
+            <h3>Principais técnicas</h3>
+            <ul>
+                <li><strong>Finite State Machine (FSM):</strong> estados como patrulha, perseguir, atacar, fugir, com transições claras.</li>
+                <li><strong>Behaviour Trees:</strong> árvores de decisão que organizam e priorizam ações de forma modular.</li>
+                <li><strong>Pathfinding:</strong> algoritmos como A* e Dijkstra para encontrar rotas em grids ou navmeshes.</li>
+                <li><strong>Sistemas de Percepção:</strong> visão, audição e proximidade para detectar o jogador e reagir.</li>
+                <li><strong>Decision Making:</strong> regras condicionais e Utility AI (escolher a melhor ação com base em pontuação).</li>
+                <li><strong>PCG (Procedural Content Generation):</strong> uso de algoritmos para gerar mapas, fases, inimigos ou itens dinamicamente, aumentando a rejogabilidade.</li>
+                <li><strong>Método de Monte Carlo:</strong> simulações baseadas em aleatoriedade controlada, úteis para tomada de decisão complexa ou prever melhores ações.</li>
+            </ul>
+
+            <h3>O que estudar</h3>
+            <ul>
+                <li><strong>Lógica de estados:</strong> projetar transições simples e claras.</li>
+                <li><strong>Árvores de comportamento:</strong> decompor problemas grandes em blocos reutilizáveis.</li>
+                <li><strong>Algoritmos de busca:</strong> principalmente A* e variações para navegação.</li>
+                <li><strong>Steering Behaviors:</strong> técnicas para movimento realista (perseguir, fugir, alinhar, separar).</li>
+                <li><strong>PCG:</strong> algoritmos de ruído (Perlin, Simplex), L-systems, gramáticas e randomização com regras.</li>
+                <li><strong>Monte Carlo:</strong> aprender simulações iterativas para otimizar escolhas da IA em cenários incertos.</li>
+            </ul>
+
+            <h3>Importância</h3>
+            <ul>
+                <li><strong>Desafio:</strong> inimigos adaptativos tornam o jogo mais envolvente.</li>
+                <li><strong>Imersão:</strong> NPCs convincentes fazem o mundo parecer vivo.</li>
+                <li><strong>Rejogabilidade:</strong> PCG e Monte Carlo criam experiências únicas a cada partida.</li>
+                <li><strong>Escalabilidade:</strong> IA modular possibilita desde inimigos simples até sistemas complexos de mundo vivo.</li>
+            </ul>
+
+            
+            <h3>Conteúdo Recomendado</h3>
+            <div class="dialog-recomendations">
+                <a href="https://edirlei.com/index.php/teaching/162-artificial-intelligence-iade-2023" target="_blank"><span class="recomendation curso">Curso</span>Artificial Intelligence - IADE - 2023</a>
+                <a href="https://www.blogs.opengrowth.com/which-algorithm-is-used-in-games" target="_blank"><span class="recomendation site">Site</span>Which Algorithm is Used in Games?</a>
+                <a href="https://medium.com/@felipecoast/o-que-é-uma-finite-state-machine-0592d7213f21" target="_blank"><span class="recomendation site">Site</span>O que é uma Finite State Machine?</a>
+                <a href="https://robohub.org/introduction-to-behavior-trees" target="_blank"><span class="recomendation site">Site</span>Introduction to behavior trees</a>
+                <a href="https://code.tutsplus.com/series/understanding-steering-behaviors--gamedev-12732" target="_blank"><span class="recomendation site">Site</span>Understanding Steering Behavior</a>
+                <a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/procedural-content-generation-overview" target="_blank"><span class="recomendation artigo">Artigo</span>Procedural Content Generation Overview</a>
+                <a href="https://dl.acm.org/doi/10.5555/AAI29120850#:~:text=Monte%20Carlo%20Tree%20Search%20(MCTS,for%20domain-independent%20automated%20planning." target="_blank"><span class="recomendation artigo">Artigo</span>Monte Carlo Tree Search in Imperfect-Information Games</a>
+            </div>
         </div>
         <button class="close-modal">x</button>
     </dialog>
+    <!-- Padrões de Projeto -->
     <dialog class="modal modal-padroes-projeto">
         <h2>Padrões de Projeto</h2>
         <div class="dialog-content">
-            <p>[Inserir dados sobre "Padrões de Projeto"]</p>
+            <ul>
+                <li><strong>Padrões de Projeto (Design Patterns)</strong> são soluções reutilizáveis para problemas comuns de programação.</li>
+                <li>Em jogos, eles ajudam a organizar o código, reduzir dependências e facilitar manutenção e escalabilidade.</li>
+                <li>Não são código pronto, mas modelos de como estruturar partes da aplicação de forma clara e eficiente.</li>
+            </ul>
+
+            <h3>Por que usar Padrões de Projeto?</h3>
+            <ul>
+                <li><strong>Organização:</strong> evita duplicação e bagunça no código.</li>
+                <li><strong>Reutilização:</strong> soluções testadas podem ser aplicadas em vários contextos.</li>
+                <li><strong>Comunicação:</strong> facilitam o entendimento entre desenvolvedores (nomes conhecidos como Singleton, Observer etc.).</li>
+                <li><strong>Escalabilidade:</strong> facilita a evolução de projetos maiores sem quebrar sistemas antigos.</li>
+            </ul>
+
+            <h3>Padrões mais usados em Game Programming</h3>
+            <ul>
+                <li><strong>Singleton:</strong> garante que exista apenas uma instância de um objeto (ex.: Game Manager, Audio Manager).</li>
+                <li><strong>Observer (Event System):</strong> permite que objetos se inscrevam em eventos e sejam notificados sem dependências diretas.</li>
+                <li><strong>Factory:</strong> cria objetos de forma centralizada, útil para spawn de inimigos, itens e projéteis.</li>
+                <li><strong>Component:</strong> organiza comportamentos em módulos independentes que podem ser adicionados/removidos (base da Unity e UE).</li>
+                <li><strong>State:</strong> gerencia estados de forma clara (ex.: menu, jogando, pausado, morto).</li>
+                <li><strong>Strategy:</strong> troca algoritmos ou comportamentos em tempo de execução (ex.: diferentes padrões de ataque de inimigos).</li>
+                <li><strong>Command:</strong> encapsula ações em objetos, útil para inputs, sistemas de undo/redo e gravação de ações.</li>
+            </ul>
+
+            <h3>Importância em jogos</h3>
+            <ul>
+                <li><strong>Facilitam testes e debugging</strong> ao isolar responsabilidades.</li>
+                <li><strong>Reduzem acoplamento</strong>, deixando sistemas mais independentes.</li>
+                <li><strong>Tornam o jogo expansível</strong> sem precisar refatorar toda a base de código.</li>
+            </ul>
+
         </div>
         <button class="close-modal">x</button>
     </dialog>
