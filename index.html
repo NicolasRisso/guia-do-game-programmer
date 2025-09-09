@@ -643,15 +643,55 @@
                 <li><strong>Velocidade de iteração:</strong> detectar regressões cedo reduz custo de correção.</li>
                 <li><strong>Qualidade:</strong> builds “sempre prontos” facilitam QA, playtests e releases.</li>
             </ul>
+
+            <h3>Links úteis</h3>
             <div class="dialog-recomendations"> <a href="https://www.jenkins.io" target="_blank"><span class="recomendation site">Site</span>Jenkins - The Leading Open Source Automation Server</a> <a href="https://docs.aws.amazon.com/wellarchitected/latest/games-industry-lens/games-scenario-3.1.html" target="_blank"><span class="recomendation site">Site</span>AWS Game Production CI/CD Documentation</a> <a href="https://igda.org/news-archive/making-game-devs-sane-again-with-ci-cd/" target="_blank"><span class="recomendation artigo">Artigo</span>Making Game Devs Sane Again with CI/CD - IGDA</a> <a href="https://www.youtube.com/watch?v=4osVhyU2s9o" target="_blank"><span class="recomendation youtube">Youtube</span>Never Build Your Games Again! - Unity Build Automation⚙️</a> <a href="https://www.youtube.com/watch?v=Y-TVOPdEUFw" target="_blank"><span class="recomendation youtube">Youtube</span>Unreal and DevOps: Part 3 Setting up the Project Jenkins Build Job</a> </div>
             
         </div>
         <button class="close-modal">x</button>
     </dialog>
+    <!-- Arquitetura de Redes -->
     <dialog class="modal modal-arquitetura-redes">
         <h2>Arquitetura de Redes</h2>
         <div class="dialog-content">
-            <p>[Inserir dados sobre "Arquitetura de Redes"]</p>
+            <ul>
+                <li><strong>Arquitetura de Redes em jogos</strong> define como os jogadores se conectam e trocam informações em tempo real.</li>
+                <li>O objetivo é sincronizar estados do jogo entre diferentes máquinas, mantendo consistência, jogabilidade fluida e compensando latência.</li>
+            </ul>
+
+            <h3>Conceitos fundamentais</h3>
+            <ul>
+                <li><strong>Cliente-Servidor:</strong> modelo mais comum. O servidor é a “autoridade” que valida ações, enquanto clientes enviam inputs e recebem o estado do jogo.</li>
+                <li><strong>P2P (Peer-to-Peer):</strong> menos usado hoje. Jogadores conectam entre si, sem servidor central. Pode ter problemas de segurança e sincronização.</li>
+                <li><strong>Replicação:</strong> envio automático de variáveis/estados de um servidor para clientes (ex.: posição, vida, inventário). Simplifica sincronização.</li>
+                <li><strong>RPCs (Remote Procedure Calls):</strong> chamadas de funções em rede. Podem ser do cliente para o servidor (ex.: ação do jogador) ou do servidor para os clientes (ex.: spawn de inimigos).</li>
+                <li><strong>Interpolação:</strong> suaviza posições entre updates de rede para evitar teletransporte de personagens.</li>
+                <li><strong>Predição de Cliente (Client-Side Prediction):</strong> cliente simula a ação antes da resposta do servidor para reduzir delay percebido.</li>
+                <li><strong>Reconciliation:</strong> ajuste quando a resposta oficial do servidor chega, corrigindo discrepâncias sem quebrar a fluidez.</li>
+                <li><strong>Lag Compensation:</strong> técnicas do servidor para compensar latência, como validar tiros “no passado” com base no tempo do cliente.</li>
+                <li><strong>Tickrate:</strong> frequência de atualizações do servidor (ex.: 30, 60 ou 128 ticks/segundo), impacta responsividade e consumo de banda.</li>
+                <li><strong>Snapshot:</strong> “foto” do estado do jogo enviada aos clientes periodicamente.</li>
+                <li><strong>Interpolação/Extrapolação:</strong> prever estados futuros quando pacotes atrasam ou se perdem.</li>
+            </ul>
+
+            <h3>Problemas comuns</h3>
+            <ul>
+                <li><strong>Latência Alta:</strong> tempo de envio e resposta entre cliente e servidor acima do ideal para imersão.</li>
+                <li><strong>Packet Loss:</strong> perda de pacotes, causando saltos ou inconsistência.</li>
+                <li><strong>Cheating:</strong> clientes tentando trapacear. Solução "Simples": servidor deve ser sempre a autoridade.</li>
+                <li><strong>Escalabilidade:</strong> lidar com dezenas/centenas de jogadores exige boas técnicas de compressão, priorização e particionamento de rede.</li>
+            </ul>
+
+            <h3>Por que entender isso?</h3>
+            <ul>
+                <li><strong>Consistência:</strong> todos veem e jogam no mesmo “mundo sincronizado”.</li>
+                <li><strong>Experiência:</strong> técnicas de predição e interpolação reduzem impacto de lag.</li>
+                <li><strong>Segurança:</strong> arquiteturas corretas previnem exploits e cheats.</li>
+                <li><strong>Performance:</strong> balancear tráfego de rede e processamento garante partidas estáveis.</li>
+            </ul>
+
+            <h3>Links úteis</h3>
+            <div class="dialog-recomendations"> <a href="https://blog.hathora.dev/peer-to-peer-vs-client-server-architecture/" target="_blank"><span class="recomendation artigo">Artigo</span>Peer-to-peer vs Client-Server Architecture for Multiplayer Games</a> <a href="https://www.gabrielgambetta.com/client-server-game-architecture.html" target="_blank"><span class="recomendation artigo">Artigo</span>Fast-Paced Multiplayer - Client-Server Game Architecture</a> <a href="https://www.gabrielgambetta.com/client-side-prediction-server-reconciliation.html" target="_blank"><span class="recomendation artigo">Artigo</span>Client-Side Prediction and Server Reconciliation</a> <a href="https://www.gabrielgambetta.com/lag-compensation.html" target="_blank"><span class="recomendation artigo">Artigo</span>Fast-Paced Multiplayer - Lag Compensation</a> <a href="https://developer.valvesoftware.com/wiki/Latency_Compensating_Methods_in_Client/Server_In-game_Protocol_Design_and_Optimization" target="_blank"><span class="recomendation artigo">Artigo</span>Valve - Latency Compensating Methods in Client/Server Protocol Design</a> <a href="https://www.i3d.net/countering-scourge-of-cheating-in-games/" target="_blank"><span class="recomendation artigo">Artigo</span>Countering the Ever-Evolving Scourge of Cheating in Games</a> <a href="https://netduma.com/blog/What-Causes-Packet-Loss-in-Gaming" target="_blank"><span class="recomendation artigo">Artigo</span>What Causes Packet Loss in Gaming - Solutions and Prevention</a> <a href="https://www.somethinglikegames.de/en/blog/2024/pros-and-cons-of-lag-compensation/" target="_blank"><span class="recomendation artigo">Artigo</span>The Pros and Cons of Lag Compensation</a> <a href="https://www.zigpoll.com/content/what-are-some-best-practices-for-scaling-server-infrastructure-to-handle-increasing-realtime-multiplayer-game-traffic-efficiently" target="_blank"><span class="recomendation artigo">Artigo</span>Best Practices for Scaling Server Infrastructure for Multiplayer Games</a> <a href="https://edgegap.com/blog/cheaters-peer-to-peer-hosting-an-beginners-guide" target="_blank"><span class="recomendation artigo">Artigo</span>Cheaters & Peer-To-Peer Networking: A Beginners Guide</a> <a href="https://www.youtube.com/watch?v=KBBJqPL5-eU" target="_blank"><span class="recomendation youtube">Youtube</span>How Multiplayer Games Work</a> <a href="https://www.youtube.com/watch?v=1x2SJYcR_Ck" target="_blank"><span class="recomendation youtube">Youtube</span>How Does Multiplayer Work in Unreal Engine 5</a> </div>
         </div>
         <button class="close-modal">x</button>
     </dialog>
