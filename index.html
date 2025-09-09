@@ -548,10 +548,54 @@
         </div>
         <button class="close-modal">x</button>
     </dialog>
+    <!-- Controle de Versão -->
     <dialog class="modal modal-controle-versao">
         <h2>Controle de Versão</h2>
         <div class="dialog-content">
-            <p>[Inserir dados sobre "Controle de Versão"]</p>
+            <ul>
+                <li><strong>Controle de versão</strong> é o sistema que registra mudanças no código/arquivos ao longo do tempo, permitindo <em>voltar versões</em>, <em>trabalhar em equipe</em> e <em>rastrear histórico</em>.</li>
+                <li>Em jogos, é crucial para lidar com muitos arquivos (código + assets), colaborar com segurança e evitar perda de trabalho.</li>
+                <li>Particularmente, SVN é mais sólido para o desenvolvimento de jogos, já que ele lida melhor com arquivos binários, e jogos tem muitos arquivos binários, mas ambas as soluções para controle de versão são válidas.</li>
+            </ul>
+
+            <h3>Git (distribuído)</h3>
+            <ul>
+                <li><strong>Modelo:</strong> cada dev tem um repositório completo local; commits offline e push/pull para remotos.</li>
+                <li><strong>Fluxos comuns:</strong> Git Flow, Trunk-Based, feature branches, code review via PR/MR.</li>
+                <li><strong>Comandos básicos:</strong> <code>git init</code>, <code>git clone</code>, <code>git add</code>, <code>git commit</code>, <code>git push</code>, <code>git pull</code>, <code>git branch</code>, <code>git checkout</code>/<code>switch</code>, <code>git merge</code>, <code>git rebase</code>.</li>
+                <li><strong>Binários grandes:</strong> usar <em>Git LFS</em> para uassets, texturas, áudio, etc.</li>
+                <li><strong>Quando usar:</strong> equipes distribuídas, necessidade de branches/PRs rápidos e integrações com GitHub/GitLab/Azure.</li>
+            </ul>
+
+            <h3>SVN (centralizado)</h3>
+            <ul>
+                <li><strong>Modelo:</strong> um servidor central com <em>trunk/branches/tags</em>; commits dependem do servidor.</li>
+                <li><strong>Fluxo comum:</strong> trabalhar no <em>trunk</em> e criar branches para features/lançamentos.</li>
+                <li><strong>Comandos básicos:</strong> <code>svn checkout</code>, <code>svn update</code>, <code>svn add</code>, <code>svn commit</code>, <code>svn status</code>, <code>svn revert</code>, <code>svn merge</code>, <code>svn branch/tag</code> (via <code>svn copy</code>).</li>
+                <li><strong>Quando usar:</strong> times que preferem controle central e histórico linear; pipelines legados.</li>
+            </ul>
+
+            <h3>Boas práticas</h3>
+            <ul>
+                <li><strong>.gitignore / svn:ignore:</strong> ignorar pastas geradas (Unreal/Unity): <em>Binaries</em>, <em>Intermediate</em>, <em>DerivedDataCache</em>, <em>Saved</em>, <em>Library</em>, <em>Temp</em>, <em>Logs</em>.</li>
+                <li><strong>Atomic commits:</strong> mudanças coesas + mensagens claras (<em>feat/fix/chore</em> + contexto).</li>
+                <li><strong>Branches por feature:</strong> isolar trabalho; PR com revisão e testes.</li>
+                <li><strong>Merge frequente:</strong> reduzir conflitos (especialmente assets binários).</li>
+                <li><strong>Locks quando necessário:</strong> para arquivos binários não mescláveis (modelos, levels) — SVN tem suporte nativo; em Git, combine LFS + <code>lock</code>.</li>
+                <li><strong>Tags/Releases:</strong> marque builds estáveis (RC, v1.0, hotfix).</li>
+                <li><strong>Automação:</strong> CI para builds/testes; hooks para checagens (linters, tamanho de arquivo, naming).</li>
+            </ul>
+
+            <h3>Links úteis</h3>
+            <div class="dialog-recomendations">
+                <a href="https://git-scm.com" target="_blank"><span class="recomendation site">Site</span>Git</a>
+                <a href="https://subversion.apache.org" target="_blank"><span class="recomendation site">Site</span>Apache Subversion</a>
+                <a href="https://tortoisesvn.net" target="_blank"><span class="recomendation site">Site</span>Tortoise SVN</a>
+                <a href="https://www.youtube.com/watch?v=hwP7WQkmECE" target="_blank"><span class="recomendation youtube">Youtube</span>Git Explained in 100 Seconds</a>
+                <a href="https://www.youtube.com/watch?v=onr-x11Dtfs" target="_blank"><span class="recomendation youtube">Youtube</span>Why GIT is HORRIBLE for Game Dev</a>
+                <a href="https://www.youtube.com/watch?v=lq1VgqIgkm0" target="_blank"><span class="recomendation youtube">Youtube</span>Travel Back In Time! - SVN For Game Design - UE4, Unity, Whatever!</a>
+            </div>
+
         </div>
         <button class="close-modal">x</button>
     </dialog>
