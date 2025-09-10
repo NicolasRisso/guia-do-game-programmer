@@ -695,10 +695,45 @@
         </div>
         <button class="close-modal">x</button>
     </dialog>
+    <!-- Testes de Código -->
     <dialog class="modal modal-testes-codigo">
         <h2>Testes de Código</h2>
         <div class="dialog-content">
-            <p>[Inserir dados sobre "Testes de Código"]</p>
+            <ul>
+                <li><strong>Testes de Código</strong> são processos que garantem que o software funciona como esperado e que mudanças futuras não quebrem o que já estava funcionando.</li>
+                <li>Em jogos, eles ajudam a evitar bugs críticos, manter a estabilidade e aumentar a confiança no código durante o desenvolvimento.</li>
+            </ul>
+
+            <h3>Tipos de Testes</h3>
+            <ul>
+                <li><strong>Testes Unitários:</strong> verificam partes pequenas e isoladas do código (funções, classes). Ex.: validar cálculo de dano ou XP ganho.</li>
+                <li><strong>Testes de Integração:</strong> verificam se módulos diferentes funcionam bem juntos. Ex.: sistema de inventário comunicando corretamente com o sistema de atributos.</li>
+                <li><strong>Testes Funcionais:</strong> validam se uma funcionalidade atende ao que foi planejado. Ex.: se apertar "pular" realmente faz o personagem saltar.</li>
+                <li><strong>Testes de Regressão:</strong> garantem que features antigas não quebrem após mudanças ou atualizações.</li>
+                <li><strong>Testes de Performance:</strong> medem FPS, uso de CPU/GPU e memória em cenários diferentes.</li>
+                <li><strong>Testes Automatizados:</strong> scripts que rodam sozinhos para validar código constantemente (CI/CD pipelines).</li>
+            </ul>
+
+            <h3>Boas Práticas</h3>
+            <ul>
+                <li><strong>Começar pequeno:</strong> testes unitários simples já trazem valor.</li>
+                <li><strong>Automatizar sempre que possível:</strong> builds automáticas + testes automáticos aumentam produtividade.</li>
+                <li><strong>Testar cenários de erro:</strong> entradas inválidas, valores nulos, limites (edge cases).</li>
+                <li><strong>Manter testes atualizados:</strong> quando o código mudar, os testes devem refletir as novas regras.</li>
+                <li><strong>Documentar:</strong> descreva o que cada teste cobre e seu objetivo.</li>
+            </ul>
+
+            <h3>Importância nos Jogos</h3>
+            <ul>
+                <li><strong>Redução de bugs:</strong> evita que erros cheguem até o jogador.</li>
+                <li><strong>Segurança em refatorações:</strong> dá confiança para reescrever e otimizar código.</li>
+                <li><strong>Economia de tempo:</strong> encontrar problemas cedo é mais barato que corrigir depois.</li>
+                <li><strong>Qualidade final:</strong> aumenta estabilidade e consistência da experiência de jogo.</li>
+            </ul>
+
+            <h3>Links úteis</h3>
+            <div class="dialog-recomendations"> <a href="https://www.jetbrains.com/guide/gamedev/tutorials/rider-for-unreal/unit-testing/" target="_blank"><span class="recomendation site">Site</span>Unreal Engine Unit Testing - JetBrains Guide</a> <a href="https://bogart.tech/how-to-implement-functional-testing-in-unreal-engine/" target="_blank"><span class="recomendation artigo">Artigo</span>How to implement functional testing in Unreal Engine</a> <a href="https://www.youtube.com/watch?v=8RNSkWLGROs" target="_blank"><span class="recomendation youtube">Youtube</span>Unreal Engine 5: Mastering Automated Testing Tools for Games</a> <a href="https://www.youtube.com/watch?v=3ftOkc-cA7U" target="_blank"><span class="recomendation youtube">Youtube</span>Using Unreal Automation at Riot Games</a> </div>
+
         </div>
         <button class="close-modal">x</button>
     </dialog>
