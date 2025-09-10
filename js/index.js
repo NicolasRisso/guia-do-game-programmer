@@ -1,185 +1,40 @@
-const btnModalIntro = document.querySelector(".intro")
-const modalIntro = document.querySelector(".modal-introducao")
-const buttonCloseIntro = document.querySelector(".close-intro") 
+document.addEventListener('DOMContentLoaded', () => {
+    // Select all buttons that open a modal
+    const openModalButtons = document.querySelectorAll('[data-modal-target]');
 
-const btnModalConceitosBasicos = document.querySelector(".conceitos-basicos")
-const modalConceitosBasicos = document.querySelector(".modal-conceitos-basicos")
-const buttonCloseConceoitosBasicos = document.querySelector(".close-conceitos-basicos") 
+    // Select all close buttons
+    const closeModalButtons = document.querySelectorAll('.close-modal');
 
-const btnModalGdd = document.querySelector(".gdd")
-const modalGdd = document.querySelector(".modal-gdd")
-const buttonCloseGdd = document.querySelector(".close-gdd") 
+    // Add click event to all open modal buttons
+    openModalButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const modalId = button.dataset.modalTarget;
+            const modal = document.querySelector(`.modal-${modalId}`);
+            if (modal) {
+                modal.showModal();
+            }
+        });
+    });
 
-const btnModalFrameworks = document.querySelector(".frameworks")
-const modalFrameworks = document.querySelector(".modal-frameworks")
-const buttonCloseFrameworks = document.querySelector(".close-frameworks") 
+    // Add click event to all close modal buttons
+    closeModalButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const modal = button.closest('.modal');
+            if (modal) {
+                modal.close();
+            }
+        });
+    });
 
-const btnModalDesignDeSistemas = document.querySelector(".design-de-sistemas")
-const modalDesignDeSistemas = document.querySelector(".modal-design-de-sistemas")
-const buttonCloseDesignDeSistemas = document.querySelector(".close-design-de-sistemas") 
-
-const btnModalLevelDesign = document.querySelector(".level-design")
-const modalLevelDesign = document.querySelector(".modal-level-design")
-const buttonCloseLevelDesign = document.querySelector(".close-level-design") 
-
-const btnModalPlanilhas = document.querySelector(".planilhas")
-const modalPlanilhas = document.querySelector(".modal-planilhas")
-const buttonClosePlanilhas = document.querySelector(".close-planilhas") 
-
-const btnModalBalanceamento = document.querySelector(".balanceamento")
-const modalBalanceamento = document.querySelector(".modal-balanceamento")
-const buttonCloseBalanceamento = document.querySelector(".close-balanceamento") 
-
-const btnModalVersionamento = document.querySelector(".versionamento")
-const modalVersionamento = document.querySelector(".modal-versionamento")
-const buttonCloseVersionamento = document.querySelector(".close-versionamento") 
-
-const btnModalEngines = document.querySelector(".engines")
-const modalEngines = document.querySelector(".modal-engines")
-const buttonCloseEngines = document.querySelector(".close-engines") 
-
-const btnModalPodcasts = document.querySelector(".podcasts")
-const modalPodcasts = document.querySelector(".modal-podcasts")
-const buttonClosePodcasts = document.querySelector(".close-podcasts")
-
-const btnModalCanais = document.querySelector(".canais")
-const modalCanais = document.querySelector(".modal-canais")
-const buttonCloseCanais = document.querySelector(".close-canais") 
-
-const btnModalJoga = document.querySelector(".joga")
-const modalJoga = document.querySelector(".modal-joga")
-const buttonCloseJoga = document.querySelector(".close-joga") 
-
-// abrindo e fechando modais
-
-// modal introducao
-btnModalIntro.onclick = function () {
-    modalIntro.classList.remove("dialog-close")
-    modalIntro.classList.add("dialog-open")
-}
-
-buttonCloseIntro.onclick = function () {
-    modalIntro.classList.add("dialog-close")
-    modalIntro.classList.remove("dialog-open")
-}
-
-// modal conceitos básicos
-btnModalConceitosBasicos.onclick = function () {
-    modalConceitosBasicos.classList.remove("dialog-close")
-    modalConceitosBasicos.classList.add("dialog-open")
-}
-
-buttonCloseConceoitosBasicos.onclick = function () {
-    modalConceitosBasicos.classList.add("dialog-close")
-    modalConceitosBasicos.classList.remove("dialog-open")
-} 
-
-// modal gdd
-btnModalGdd.onclick = function () {
-    modalGdd.classList.remove("dialog-close")
-    modalGdd.classList.add("dialog-open")
-}
-
-buttonCloseGdd.onclick = function () {
-    modalGdd.classList.add("dialog-close")
-    modalGdd.classList.remove("dialog-open")
-}
-
-// modal frameworks
-btnModalFrameworks.onclick = function () {
-    modalFrameworks.classList.remove("dialog-close")
-    modalFrameworks.classList.add("dialog-open")
-}
-
-buttonCloseFrameworks.onclick = function () {
-    modalFrameworks.classList.add("dialog-close")
-    modalFrameworks.classList.remove("dialog-open")
-}
-
-// modal design de sistemas
-btnModalDesignDeSistemas.onclick = function () {
-    modalDesignDeSistemas.classList.remove("dialog-close")
-    modalDesignDeSistemas.classList.add("dialog-open")
-}
-
-buttonCloseDesignDeSistemas.onclick = function () {
-    modalDesignDeSistemas.classList.add("dialog-close")
-    modalDesignDeSistemas.classList.remove("dialog-open")
-}
-
-// modal level design
-btnModalLevelDesign.onclick = function () {
-    modalLevelDesign.classList.remove("dialog-close")
-    modalLevelDesign.classList.add("dialog-open")
-}
-
-buttonCloseLevelDesign.onclick = function () {
-    modalLevelDesign.classList.add("dialog-close")
-    modalLevelDesign.classList.remove("dialog-open")
-}
-
-// modal planilhas
-btnModalPlanilhas.onclick = function () {
-    modalPlanilhas.classList.remove("dialog-close")
-    modalPlanilhas.classList.add("dialog-open")
-}
-
-buttonClosePlanilhas.onclick = function () {
-    modalPlanilhas.classList.add("dialog-close")
-    modalPlanilhas.classList.remove("dialog-open")
-}
-
-// modal balanceamento
-btnModalBalanceamento.onclick = function () {
-    modalBalanceamento.classList.remove("dialog-close")
-    modalBalanceamento.classList.add("dialog-open")
-}
-
-buttonCloseBalanceamento.onclick = function () {
-    modalBalanceamento.classList.add("dialog-close")
-    modalBalanceamento.classList.remove("dialog-open")
-}
-
-// modal versionamento
-btnModalVersionamento.onclick = function () {
-    modalVersionamento.classList.remove("dialog-close")
-    modalVersionamento.classList.add("dialog-open")
-}
-
-buttonCloseVersionamento.onclick = function () {
-    modalVersionamento.classList.add("dialog-close")
-    modalVersionamento.classList.remove("dialog-open")
-}
-
-// modal engines
-btnModalEngines.onclick = function () {
-    modalEngines.classList.remove("dialog-close")
-    modalEngines.classList.add("dialog-open")
-}
-
-buttonCloseEngines.onclick = function () {
-    modalEngines.classList.add("dialog-close")
-    modalEngines.classList.remove("dialog-open")
-}
-
-// modal podcasts
-btnModalPodcasts.onclick = function () {
-    modalPodcasts.classList.remove("dialog-close")
-    modalPodcasts.classList.add("dialog-open")
-}
-
-buttonClosePodcasts.onclick = function () {
-    modalPodcasts.classList.add("dialog-close")
-    modalPodcasts.classList.remove("dialog-open")
-}
-
-// modal canais
-btnModalCanais.onclick = function () {
-    modalCanais.classList.remove("dialog-close")
-    modalCanais.classList.add("dialog-open")
-}
-
-buttonCloseCanais.onclick = function () {
-    modalCanais.classList.add("dialog-close")
-    modalCanais.classList.remove("dialog-open")
-}
+    // Add click event to close modal when clicking on the backdrop
+    const allModals = document.querySelectorAll('.modal');
+    allModals.forEach(modal => {
+        modal.addEventListener('click', (event) => {
+            // The '::backdrop' pseudo-element is not in the DOM,
+            // so we check if the click is on the dialog itself.
+            if (event.target === modal) {
+                modal.close();
+            }
+        });
+    });
+});
